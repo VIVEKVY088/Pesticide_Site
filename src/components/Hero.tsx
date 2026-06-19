@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { Phone, Shield, ChevronRight, Sparkles, Star, ArrowDown } from "lucide-react";
+import { Phone, Shield, ChevronRight, Sparkles, ArrowDown } from "lucide-react";
 import { PHONE_PRIMARY_LINK } from "../config";
+import SEO from "./SEO";
 
 // Floating particle component
 function FloatingParticle({ delay = 0, size = 4, x = 0, y = 0, color = "rgba(255,255,255,0.1)" }) {
@@ -33,7 +34,13 @@ function FloatingParticle({ delay = 0, size = 4, x = 0, y = 0, color = "rgba(255
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-charcoal-900">
+    <>
+      <SEO
+        title="Home"
+        description="Professional pest control in Mahavir Enclave, New Delhi. Anti-termite, cockroach, bed bugs, rodent, ant, lizard & mosquito control. Same-day service, eco-friendly treatments, 1-year warranty."
+        canonicalUrl="https://urbanpestdial.in/"
+      />
+      <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-charcoal-900">
       {/* Animated gradient background */}
       <motion.div
         className="absolute inset-0 bg-gradient-to-br from-charcoal-900 via-charcoal-900/95 to-red-accent/20 animate-gradient"
@@ -89,13 +96,16 @@ export default function Hero() {
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
       />
 
-      {/* Hero image */}
-      <div className="absolute inset-0 lg:left-1/2 lg:right-0 opacity-30 lg:opacity-100">
+      {/* Hero image - above the fold, eager loaded for LCP */}
+      <div className="absolute inset-0 lg:left-1/2 lg:right-0 opacity-30 lg:opacity-100 overflow-hidden">
         <motion.img
           src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80"
-          alt="Professional pest control technician at work"
+          alt="Professional pest control technician at work in Mahavir Enclave, New Delhi"
           className="w-full h-full object-cover"
-          loading="lazy"
+          loading="eager"
+          fetchPriority="high"
+          width="1200"
+          height="800"
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 8, ease: "easeOut" }}
@@ -250,5 +260,6 @@ export default function Hero() {
         </motion.div>
       </motion.div>
     </section>
+    </>
   );
 }

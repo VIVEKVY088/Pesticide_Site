@@ -20,6 +20,8 @@ export const WHATSAPP_NUMBER = "917011116113";
 export const COMPANY_NAME = "Urban Pest Dial Services";
 export const COMPANY_TAGLINE = "Safe, Trusted & Professional Pest Control in Delhi NCR";
 export const COMPANY_ADDRESS = "RZD1/204, KH No-91, Back Side Old No-E4, Gali No-5, Mahavir Enclave, New Delhi-45";
+export const COMPANY_EMAIL = "info@urbanpestdial.in";
+export const COMPANY_WEBSITE = "https://urbanpestdial.in";
 
 /** Google Maps embed URL (generated from address) */
 export const GOOGLE_MAPS_EMBED = "https://maps.google.com/maps?q=RZD1%2F204%2C+KH+No-91%2C+Gali+No-5%2C+Mahavir+Enclave%2C+New+Delhi-45&output=embed";

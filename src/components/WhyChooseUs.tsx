@@ -50,11 +50,7 @@ const cardVariants = {
 };
 
 // Animated counter component
-function AnimatedCounter({ value, suffix = "" }: { value: string; suffix?: string }) {
-  const numValue = parseInt(value.replace(/[^0-9]/g, ""));
-  const hasPlus = value.includes("+");
-  const hasStar = value.includes("★");
-
+function AnimatedCounter({ value }: { value: string }) {
   return (
     <motion.span
       className="font-heading font-bold text-2xl sm:text-3xl text-red-accent inline-flex items-center gap-1"
@@ -63,19 +59,7 @@ function AnimatedCounter({ value, suffix = "" }: { value: string; suffix?: strin
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
-      {hasStar && "4.8"}
-      {!hasStar && (
-        <motion.span
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-        >
-          {numValue}
-        </motion.span>
-      )}
-      {hasPlus && "+"}
-      {hasStar && "★"}
-      {suffix}
+      {value}
     </motion.span>
   );
 }

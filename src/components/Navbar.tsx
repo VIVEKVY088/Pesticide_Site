@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Phone, Menu, X, Shield } from "lucide-react";
+import { Phone, Menu, X } from "lucide-react";
 import { PHONE_PRIMARY, PHONE_PRIMARY_LINK } from "../config";
+
+import pestLogo from "../assets/pestLogo.jpg";
 
 const NAV_LINKS = [
   { label: "Home", href: "#home" },
@@ -54,14 +56,8 @@ export default function Navbar() {
             className="flex items-center gap-2 group"
             whileHover={{ scale: 1.02 }}
           >
-            <div className="relative w-9 h-9 lg:w-10 lg:h-10">
-              <motion.div
-                className="absolute inset-0 bg-red-accent rounded-lg"
-                animate={{ rotate: [45, 50, 45] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                style={{ borderRadius: "0.5rem" }}
-              />
-              <Shield className="relative w-5 h-5 lg:w-6 lg:h-6 text-white m-auto inset-0 absolute" />
+            <div className="relative w-9 h-9 lg:w-10 lg:h-10 overflow-hidden rounded-lg bg-white flex items-center justify-center border border-charcoal-100/50 shadow-sm">
+              <img src={pestLogo} alt="Urban Pest Dial Logo" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
               <span className={`font-heading font-bold text-sm lg:text-base leading-tight transition-colors duration-300 ${scrolled ? "text-charcoal-900" : "text-white"}`}>

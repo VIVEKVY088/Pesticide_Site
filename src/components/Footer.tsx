@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Shield, Phone, MapPin, ArrowUp } from "lucide-react";
+import { Phone, MapPin, ArrowUp } from "lucide-react";
+import pestLogo from "../assets/pestLogo.jpg";
 import {
   COMPANY_NAME,
   COMPANY_TAGLINE,
@@ -81,13 +82,8 @@ export default function Footer() {
               className="flex items-center gap-2 mb-4 group"
               whileHover={{ x: 3 }}
             >
-              <div className="relative w-8 h-8">
-                <motion.div
-                  className="absolute inset-0 bg-red-accent rounded-lg"
-                  animate={{ rotate: [45, 55, 45] }}
-                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                />
-                <Shield className="relative w-5 h-5 text-white m-auto inset-0 absolute" />
+              <div className="relative w-8 h-8 overflow-hidden rounded-lg bg-white flex items-center justify-center border border-white/20 shadow-sm">
+                <img src={pestLogo} alt="Urban Pest Dial Logo" className="w-full h-full object-cover" />
               </div>
               <span className="font-heading font-bold text-lg">Urban Pest Dial Services</span>
             </motion.a>
@@ -99,7 +95,7 @@ export default function Footer() {
               {[
                 { href: SOCIAL_LINKS.facebook, label: "Facebook" },
                 { href: SOCIAL_LINKS.instagram, label: "Instagram" },
-                { href: SOCIAL_LINKS.twitter, label: "X (Twitter)" },
+                { href: "https://www.youtube.com/@URBANPESTDIAL", label: "YouTube" },
               ].map((social, i) => (
                 <motion.a
                   key={social.label}
@@ -126,7 +122,7 @@ export default function Footer() {
                   )}
                   {i === 2 && (
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                      <path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.11C19.516 3.545 12 3.545 12 3.545s-7.516 0-9.388.508a3.003 3.003 0 00-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 002.11 2.11c1.872.508 9.388.508 9.388.508s7.516 0 9.388-.508a3.003 3.003 0 002.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                     </svg>
                   )}
                 </motion.a>

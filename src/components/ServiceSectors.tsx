@@ -86,7 +86,7 @@ const cardVariants = {
   },
 };
 
-function SectorCard({ sector, index }: { sector: typeof sectors[0]; index: number }) {
+function SectorCard({ sector }: { sector: typeof sectors[0] }) {
   return (
     <motion.div
       variants={cardVariants}
@@ -197,8 +197,8 @@ export default function ServiceSectors() {
           viewport={{ once: true, margin: "-50px" }}
           className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
         >
-          {sectors.map((sector, index) => (
-            <SectorCard key={sector.title} sector={sector} index={index} />
+          {sectors.map((sector) => (
+            <SectorCard key={sector.title} sector={sector} />
           ))}
         </motion.div>
 

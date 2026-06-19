@@ -93,7 +93,7 @@ const cardVariants = {
   },
 };
 
-function ServiceCard({ service, index }: { service: typeof serviceData[0]; index: number }) {
+function ServiceCard({ service }: { service: typeof serviceData[0] }) {
   return (
     <motion.div
       variants={cardVariants}
@@ -220,8 +220,8 @@ export default function Services() {
           viewport={{ once: true, margin: "-50px" }}
           className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
         >
-          {serviceData.map((service, index) => (
-            <ServiceCard key={service.id} service={service} index={index} />
+          {serviceData.map((service) => (
+            <ServiceCard key={service.id} service={service} />
           ))}
         </motion.div>
 

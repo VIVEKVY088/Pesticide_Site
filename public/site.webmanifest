@@ -1,0 +1,26 @@
+{
+  "name": "Urban Pest Dial Services",
+  "short_name": "Urban Pest Dial",
+  "description": "Trusted pest control services in Mahavir Enclave, New Delhi. Anti-termite, cockroach, bed bugs, rodent & mosquito control.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#c62828",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

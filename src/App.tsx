@@ -1,3 +1,4 @@
+import { HelmetProvider } from "react-helmet-async";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -11,10 +12,12 @@ import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import FloatingActions from "./components/FloatingActions";
+import SEO from "./components/SEO";
 
 function App() {
   return (
-    <>
+    <HelmetProvider>
+      <SEO />
       <Navbar />
       <main>
         <Hero />
@@ -30,7 +33,7 @@ function App() {
       </main>
       <Footer />
       <FloatingActions />
-    </>
+    </HelmetProvider>
   );
 }
 
