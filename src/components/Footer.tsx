@@ -82,8 +82,13 @@ export default function Footer() {
               className="flex items-center gap-2 mb-4 group"
               whileHover={{ x: 3 }}
             >
-              <div className="relative w-8 h-8 overflow-hidden rounded-lg bg-white flex items-center justify-center border border-white/20 shadow-sm">
-                <img src={pestLogo} alt="Urban Pest Dial Logo" className="w-full h-full object-cover" />
+              <div className="flex flex-col items-center">
+                <div className="relative w-8 h-8 overflow-hidden rounded-lg bg-white flex items-center justify-center border border-white/20 shadow-sm">
+                  <img src={pestLogo} alt="Urban Pest Dial Logo" className="w-full h-full object-cover" />
+                </div>
+                <span className="text-[8px] font-bold tracking-wider text-charcoal-400 mt-1 leading-none">
+                  UPDS
+                </span>
               </div>
               <span className="font-heading font-bold text-lg">Urban Pest Dial Services</span>
             </motion.a>

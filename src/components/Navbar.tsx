@@ -56,8 +56,13 @@ export default function Navbar() {
             className="flex items-center gap-2 group"
             whileHover={{ scale: 1.02 }}
           >
-            <div className="relative w-9 h-9 lg:w-10 lg:h-10 overflow-hidden rounded-lg bg-white flex items-center justify-center border border-charcoal-100/50 shadow-sm">
-              <img src={pestLogo} alt="Urban Pest Dial Logo" className="w-full h-full object-cover" />
+            <div className="flex flex-col items-center">
+              <div className="relative w-9 h-9 lg:w-10 lg:h-10 overflow-hidden rounded-lg bg-white flex items-center justify-center border border-charcoal-100/50 shadow-sm">
+                <img src={pestLogo} alt="Urban Pest Dial Logo" className="w-full h-full object-cover" />
+              </div>
+              <span className={`text-[9px] font-bold tracking-wider leading-none mt-1 transition-colors duration-300 ${scrolled ? "text-charcoal-800" : "text-white/80"}`}>
+                UPDS
+              </span>
             </div>
             <div className="flex flex-col">
               <span className={`font-heading font-bold text-sm lg:text-base leading-tight transition-colors duration-300 ${scrolled ? "text-charcoal-900" : "text-white"}`}>
