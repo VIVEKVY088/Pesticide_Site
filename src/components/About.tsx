@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Award, Leaf, Clock, CheckCircle, ArrowRight } from "lucide-react";
 import { useRef } from "react";
+import pestImage from "../assets/PestImage.jpg";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -61,7 +62,7 @@ export default function About() {
             >
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/30 to-transparent z-10" />
               <img
-                src="https://images.unsplash.com/photo-1623122182363-10cdb93b46b4?w=600&q=80"
+                src={pestImage}
                 alt="Professional pest control technician with equipment"
                 className="w-full h-[400px] lg:h-[500px] object-cover"
                 loading="lazy"
