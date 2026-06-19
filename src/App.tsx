@@ -8,6 +8,7 @@ import Pricing from "./components/Pricing";
 import WhyChooseUs from "./components/WhyChooseUs";
 import WorkProcess from "./components/WorkProcess";
 import Testimonials from "./components/Testimonials";
+import Brands from "./components/Brands";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -28,6 +29,7 @@ function App() {
         <WhyChooseUs />
         <WorkProcess />
         <Testimonials />
+        <Brands />
         <FAQ />
         <Contact />
       </main>

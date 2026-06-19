@@ -162,7 +162,7 @@ export default function Hero() {
             className="mt-6 text-lg sm:text-xl text-charcoal-300 leading-relaxed max-w-lg"
           >
             Government-approved treatments, experienced technicians, and eco-friendly solutions.
-            Serving Delhi NCR with same-day service available. Your safety is our priority.
+            Serving Delhi NCR, Haryana, UP, and Noida with same-day service available. Your safety is our priority.
           </motion.p>
 
           {/* CTA Buttons */}
