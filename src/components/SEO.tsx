@@ -11,8 +11,8 @@ interface SEOProps {
 const SITE_NAME = "Urban Pest Dial Services";
 const DEFAULT_DESCRIPTION =
   "Trusted pest control in Mahavir Enclave, New Delhi. Anti-termite, cockroach, bed bugs, rodent, ant, lizard & mosquito control. Safe, eco-friendly, government-approved treatments with warranty.";
-const BASE_URL = "https://urbanpestdial.in";
-const DEFAULT_OG_IMAGE = "https://urbanpestdial.in/og-image.jpg";
+const BASE_URL = "https://urbanpestdialservices.in";
+const DEFAULT_OG_IMAGE = "https://urbanpestdialservices.in/og-image.jpg";
 
 export default function SEO({
   title,

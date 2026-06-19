@@ -38,7 +38,7 @@ export default function Hero() {
       <SEO
         title="Home"
         description="Professional pest control in Mahavir Enclave, New Delhi. Anti-termite, cockroach, bed bugs, rodent, ant, lizard & mosquito control. Same-day service, eco-friendly treatments, 1-year warranty."
-        canonicalUrl="https://urbanpestdial.in/"
+        canonicalUrl="https://urbanpestdialservices.in/"
       />
       <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-charcoal-900">
       {/* Animated gradient background */}

@@ -1,8 +1,8 @@
 # robots.txt for Urban Pest Dial Services
-# https://urbanpestdial.in/
+# https://urbanpestdialservices.in/
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://urbanpestdial.in/sitemap.xml
+Sitemap: https://urbanpestdialservices.in/sitemap.xml
